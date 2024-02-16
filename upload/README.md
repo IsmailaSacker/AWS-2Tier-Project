@@ -1,11 +1,11 @@
-#AWS Tier 2 Application that create, read, update and delete data in RDS database.
+# AWS Tier 2 Application that create, read, update and delete data in RDS database.
 
-#The application sit on EC2 and perform the crud operation through the UI.
-#Project Setup and Deployment Guide
+# The application sit on EC2 and perform the crud operation through the UI.
+# Project Setup and Deployment Guide
 
-##Node.js Application Deployment Guide
+## Node.js Application Deployment Guide
 
-###The below steps are performed after the provisions of vps, subnet, security group, ec2, route table, ig-gateway and aws rds
+### The below steps are performed after the provisions of vps, subnet, security group, ec2, route table, ig-gateway and aws rds
 
 ## Install Node.js and npm
 
