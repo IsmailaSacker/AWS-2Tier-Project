@@ -5,7 +5,29 @@
 ![Alt text](architecture-image.png)
 
 This guide outlines the steps to deploy a Node.js application on AWS using both Terraform and traditional provisioning methods.
+# About
+This project involves architecting a robust infrastructure for a dynamic web application. Leveraging Terraform, to design and deploy a Virtual Private Cloud (VPC) on AWS. The architecture revolves around EC2 instances for hosting the web application and MySQL RDS for managing the database.
 
+# Background
+Your team is actively developing a web application with a reliance on a database. Your specific responsibility involves configuring the VPC, EC2 instances, and RDS instances using Terraform. The architecture consists of EC2 instances for deploying the web application and MySQL RDS for the database.
+
+# Requirements
+- EC2 instances must be accessible globally via HTTP.
+- SSH access to EC2 instances is restricted to designated users.
+- RDS should reside in a private subnet and remain inaccessible from the internet.
+- Only EC2 instances should have communication privileges with the RDS instance.
+
+# Task Execution
+- Create a VPC
+- Create an Internet Gateway and Attach it to the VPC
+- Establish 3 Subnets: 1 Public for EC2 and 2 Private for RDS
+- Set Up 2 Route Tables: 1 Public and 1 Private
+- Define 2 Security Groups: 1 for EC2 and 1 for RDS
+- Create the Database Subnet Group
+- Deploy the MySQL RDS Database
+- Provision the EC2 Instance
+- Verify the Correct Configuration of All Components
+  
 ## Terraform Deployment
 
 ### Prerequisites
